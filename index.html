@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher with Animations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSS3 Transitions & Animations!</h1>
+        
+        <div class="theme-toggle">
+            <span class="toggle-label">Light</span>
+            <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider round"></span>
+            </label>
+            <span class="toggle-label">Dark</span>
+        </div>
+        
+        <div class="card fade-in">
+            <h2>CSS Transitions</h2>
+            <p>CSS transitions provide a way to control animation speed when changing CSS properties. Try hovering over this card to see a smooth transition effect.</p>
+            <button class="btn">Hover over Me</button>
+        </div>
+        
+        <div class="card animation-card fade-in">
+            <h2>CSS Animations</h2>
+            <p>Select an animation to apply to the circle:</p>
+            <div class="animated-element" id="animated-element"></div>
+            <div class="animation-controls">
+                <button class="btn" data-animation="bounce">Bounce</button>
+                <button class="btn" data-animation="spin">Spin</button>
+                <button class="btn" data-animation="pulse">Pulse</button>
+                <button class="btn" data-animation="none">Reset</button>
+            </div>
+        </div>
+        
+        <div class="card fade-in">
+            <h2>Theme Customization</h2>
+            <p>Select a primary color theme:</p>
+            <div class="theme-settings">
+                <div class="color-option" style="background-color: #3498db;" data-color="#3498db"></div>
+                <div class="color-option" style="background-color: #2ecc71;" data-color="#2ecc71"></div>
+                <div class="color-option" style="background-color: #e74c3c;" data-color="#e74c3c"></div>
+                <div class="color-option" style="background-color: #f39c12;" data-color="#f39c12"></div>
+                <div class="color-option" style="background-color: #9b59b6;" data-color="#9b59b6"></div>
+            </div>
+        </div>
+        
+        <div class="card fade-in">
+            <h2>Saved Preferences</h2>
+            <p>Your preferences are automatically saved using localStorage:</p>
+            <ul class="preferences-list" id="preferences-list">
+                <li>Loading preferences...</li>
+            </ul>
+            <button class="btn" id="reset-btn">Reset All Preferences</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
